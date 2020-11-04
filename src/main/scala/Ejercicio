@@ -1,0 +1,25 @@
+import org.apache.log4j.{Level, Logger}
+import org.apache.spark.sql.SparkSession
+
+
+object Ejercicio extends App {
+
+  Logger.getLogger("org").setLevel(Level.OFF)
+  val spark = SparkSession.builder().appName("WebLog").master("local[*]").getOrCreate()
+  //this will produce a dataframe with a single column called value
+  val base_df = spark.read.text("weblog")
+  base_df.printSchema()
+
+  //let's look at some of the data
+  base_df.show(3,false)
+
+  /* So our data is organized as follows
+  |remote host  : 10.128.2.1
+  | date        : [29/Nov/2017:06:58:55
+  | request     : GET /login.php HTTP/1.1
+  | status      : 200
+   */
+
+
+
+}

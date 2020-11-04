@@ -1,0 +1,5 @@
+200-Página cargada con éxito
+206-Solo contiene parte de los contenidos
+302-El recurso solicitado por el navegador se encuentra en otro lugar, aunque solo por tiempo limitado
+304-El recurso no ha cambiado desde la ultima vez que se solicito 	
+404-El servidor no puede encontrar el recurso solicitado por el navegador
