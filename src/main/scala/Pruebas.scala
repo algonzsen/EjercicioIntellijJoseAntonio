@@ -76,6 +76,8 @@ object Pruebas extends App {
   //val actualizar= estadosParseados.withColumn("descripcion", when($"status".equalTo(200),"CORRECTO").otherwise($"descripcion"))
   estadosParseados.select(actualizar(col("descripcion"))).show()
 
+  //probando commit git
+
 
 
 
